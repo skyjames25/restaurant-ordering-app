@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+body {
+    margin: 0;
+} 
+
+/* entire app */
+.app-container {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* header */
+.restaurant-header {
+    background-image: url(./images/resturant-header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    overflow: hidden;
+    min-height: 120px;
+}
+
+
+/* menu-container */
+.menu-container {
+
+    display:flex;
+    flex-direction: column;
+    margin: 30px;
+    max-height: 30vh;
+    overflow-y: auto;
+
+
+
+}
+
+.menu-item {
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin:0 auto;
+    padding:15px 0;
+}
+
+.item-emoji {
+    margin: auto 0;
+    font-size: 50px;
+}
+
+.item-left {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.add-btn {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin:auto 30px;
+}
+
+/* lower section */
+.lower-section {
+
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+/* Order Summary */
+.order-summary {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.order-items {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+    gap:10px 0;
+    max-height: 10vh;
+    overflow-y: auto; 
+    padding-bottom:30px;
+}
+
+.order-item {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:90%;
+}
+
+.order-total {
+    width:90%;
+    border-top: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.complete-order-btn {
+    width:90%;
+    background-color: #16DB99;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+/* order confirmation message */
+.order-confirmation {
+    padding: 30px 0;
+    background-color: greenyellow;
+    font-style: italic;
+    text-align: center;
+}
+
+/* modal */
+
+.modal-heading {
+    text-align: center;
+}
+
+.modal {
+    border: 2px solid black;
+    background-color: white;
+    display: block;
+    width: 524px;
+    height: 400px;
+    border-radius: 4px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#payment-form {
+    display:flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    align-self: center;
+    width:500px;
+    height:50px;
+    margin-top: 20px;
+}
+
+.pay-btn {
+    align-self: center;
+    background-color: #16DB99;
+    width: 500px;
+    height:50px;
+    margin-top:20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #777;
+}
+
+/* Make sure modal-content has position relative for absolute positioning */
+.modal-content {
+    position: relative;
+    /* your other modal-content styles */
+}
+
+
+/* hidden */
+.hidden {
+    display:none;
+}
